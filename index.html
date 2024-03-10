@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic tac toe</title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Tic tac toe</h1>
+        <div class="parent-container">
+            <div class="popup" id="popup">
+                <p class="popup-prompt" id="popup-prompt"></p>
+                <button class="popup-button" id="popup-button" onclick="reset()">Ok</button>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <button id="btn00" value="00" onclick="clicked(this)"></button>
+                    <button id="btn01" value="01" onclick="clicked(this)"></button>
+                    <button id="btn02" value="02" onclick="clicked(this)"></button>
+                </div>
+                <div class="row">
+                    <button id="btn10" value="10" onclick="clicked(this)"></button>
+                    <button id="btn11" value="11" onclick="clicked(this)"></button>
+                    <button id="btn12" value="12" onclick="clicked(this)"></button>
+                </div>
+                <div class="row">
+                    <button id="btn20" value="20" onclick="clicked(this)"></button>
+                    <button id="btn21" value="21" onclick="clicked(this)"></button>
+                    <button id="btn22" value="22" onclick="clicked(this)"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="score-container">
+            <div class="score-space"></div>
+            
+            <label for="x-score">x Score:</label>
+            <p id="x-score">0</p>
+
+            <div class="score-space"></div>
+
+            <label for="y-score">y Score:</label>
+            <p id="y-score">0</p>
+
+            <div class="score-space"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
