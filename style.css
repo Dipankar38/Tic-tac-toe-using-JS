@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #353535;
+    color: #d9d9d9;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    margin: 80px 0px 20px 0px;
+    font-size: 50px;
+    color: #d9d9d9;
+}
+
+.parent-container {
+    width: 600px;
+    margin: auto;
+}
+
+/* --popup menue-- */
+.popup {
+    background-color: #6fffe9;
+    position: absolute;
+    width: 540px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 105px 30px;
+    z-index: -1;
+    opacity: 0;
+    text-align: center;
+
+    /* animation: popup-anim 0.3s ease 1s 1 normal both; */
+}
+
+.popup-prompt {
+    background-color: #6fffe9;
+    color: #1c2541;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.popup-button {
+    width: 120px;
+    height: 50px;
+    margin: 30px 0px;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 26px;
+    background-color: #fb8500;
+    color: lightgoldenrodyellow;
+    border: none;
+    box-shadow:rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(45, 248, 9, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.popup-button:active {
+    background-color: #d77402;
+    color: rgb(213, 213, 181);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+        rgba(45, 248, 9, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* --main container-- */
+.container {
+    width: 510px;
+    height: 510px;
+    margin: auto;
+    border: 1px solid #d9d9d9;
+    opacity: 0.6;
+}
+
+/* --score counter-- */
+.score-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    width: 510px;
+    margin: auto;
+    font-size: 20px;
+    margin-top:15px;
+}
+
+.score-space {
+    width: 60px;
+}
+
+/* --button section-- */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container button {
+    width: 170px;
+    height: 170px;
+    border: 1px solid #d9d9d9;
+    font-size: 55px;
+    font-weight: 200;
+    opacity: 0.4;
+}
+
+/* --button animation-- */
+@keyframes btn-anim {
+    from {
+        /* font-size: 55px; */
+    }
+
+    to {
+        color: #ffb703;
+        font-size: 80px;
+        font-weight: 900;
+        opacity: 1;
+    }
+}
+
+@keyframes btn-anim-rev {
+    from {
+
+    }
+
+    to {
+        font-size: 55px;
+        font-weight: 200;
+        opacity: 0.4;
+        color: #d9d9d9;
+    }
+}
+
+/* --popup animation-- */
+@keyframes popup-anim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        width: 600px;
+        height: 320px;
+        margin: 95px 0px;
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes popup-anim-rev {
+    from {
+        width: 600px;
+        height: 320px;
+        margin: 95px 0px;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    to {
+        width: 540px;
+        height: 300px;
+        margin: 105px 30px;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+/* --popup prompt animation-- */
+@keyframes prompt-anim {
+    from {
+        /* font-size: 50px; */
+    }
+
+    to {
+        font-size: 60px;
+        opacity: 1;
+    }
+}
+
+@keyframes prompt-anim-rev {
+    from {
+        font-size: 60px;
+        opacity: 1;
+    }
+
+    to {
+        font-size: 50px;
+        opacity: 0;
+    }
+}
+
+/* --popup button animation-- */
+@keyframes popup-btn-anim {
+    from {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    to {
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@keyframes popup-btn-anim-rev {
+    from {
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    to {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
